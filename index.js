@@ -18,11 +18,8 @@ import XOR from "./Operations/XOR.js";
 
 
 const U = [1, 2, 3, 4, 5, 6, 7, 8]
-//const  At = [1, 7, 2, 6, 8]
-//const  Bt = [4, 8, 6, 7, 3, 5]
-// const At = '10101111'
-// const Bt = '01110010'
-// console.log(AND(At, Bt, U))
+// A = [1, 7, 2, 6, 8]
+// B = [4, 8, 6, 7, 3, 5]
 
 let operation = 'Об’єднання'
 selector.addEventListener('change', (event) => {
