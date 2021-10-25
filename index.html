@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="application">
+    <div class="applicationCalculation">
+        <div class="choice">
+            <div class="name">
+                <h1> Оберіть операцію над множинами (вписуйте множини в поля вводу у форматі "1, 2, 3, ...")</h1>
+            </div>
+            <select class="choiceSelect" id="selectOperation">
+                <option value="Об’єднання">Об’єднання</option>
+                <option value="Перетин">Перетин</option>
+                <option value="Різниця">Різниця</option>
+                <option value="Доповнення">Доповнення</option>
+                <option value="Симетрична різниця">Симетрична різниця</option>
+                <option value="Декартів добуток">Декартів добуток</option>
+                <option value="Є підмножиною">Є підмножиною</option>
+                <option value="Рівність множин">Рівність множин</option>
+                <option value="NOT(заперечення)">NOT(заперечення)</option>
+                <option value="OR(диз’юнкція)">OR(диз’юнкція)</option>
+                <option value="AND(кон’юнкція)">AND(кон’юнкція)</option>
+                <option value="XOR(нерівнозначність)">XOR(нерівнозначність)</option>
+            </select>
+        </div>
+        <div class="interactionField">
+            <h2>Множина А</h2>
+            <input type="text" class="setInput" id="A_array" required>
+            <h2>Множина B</h2>
+            <input type="text" class="setInput" id="B_array" required>
+            <button class="resultButton" id="getResult">Обрахувати</button>
+        </div>
+    </div>
+    <div class="resultField">
+        <h1>U = {1, 2, 3, 4, 5, 6, 7, 8}
+        </h1>
+        <h1 id="resultField">Result here</h1>
+    </div>
+</div>
+</body>
+<script type="module" src="index.js"></script>
+</html>

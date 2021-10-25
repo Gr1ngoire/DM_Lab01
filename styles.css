@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merienda:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+
+.application {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.applicationCalculation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choice {
+    margin: 0 8vh 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.name {
+    color: darkorange;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+    text-shadow: darkblue 2px 2px 2px;
+}
+
+.choiceSelect {
+    border-radius: 10px;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'Marck Script', cursive;
+    box-shadow: darkblue 8px 8px 5px;
+    background-color: hotpink;
+    color: darkblue;
+}
+
+.interactionField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5rem;
+    color: darkorange;
+}
+
+.interactionField h2 {
+    text-shadow: darkblue 2px 2px 2px;
+}
+
+.setInput {
+    height: 5vh;
+    margin-top: 0.5vh;
+    outline: none;
+    border-style: groove;
+    border-color: cornflowerblue;
+    border-radius: 2vh;
+    border-width: 5vh;
+    font-size: 2rem;
+    font-family: 'Merienda', cursive;
+    box-shadow: darkblue 8px 8px 5px;
+}
+
+.setInput:focus {
+    border-color: hotpink;
+}
+
+.resultButton {
+    margin: 4vh 0 0 7.5vw;
+    height: 8vh;
+    width: 15vw;
+    border: none;
+    border-radius: 5vh;
+    font-size: 2rem;
+    font-family: 'Marck Script', cursive;
+    color: darkblue;
+    background-color: hotpink;
+    box-shadow: darkblue 8px 8px 5px;
+}
+
+.resultButton:active {
+    color: hotpink;
+    background-color: darkblue;
+    box-shadow: hotpink 8px 8px 5px;
+    transition: 0.3s;
+}
+
+.resultField {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Merienda', cursive;
+    width: 40vm;
+    height: 24vh;
+    background-color: darkorange;
+}
