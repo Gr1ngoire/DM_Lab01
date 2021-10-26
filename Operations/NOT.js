@@ -15,6 +15,6 @@ const NOT = (A, B, universum) => {
             resultArrB.push(universum[i])
         }
     }
-    return `Бітові строки: A: ${resultStringA}, B: ${resultStringB} Нормальний вид: A: ${resultArrA}; B: ${resultArrB}`
+    return `Бітові строки: A: ${resultStringA}, B: ${resultStringB} Нормальний вид: A': ${resultArrA}; B': ${resultArrB}`
 }
 export default NOT
