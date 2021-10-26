@@ -44,6 +44,10 @@ body {
     color: darkblue;
 }
 
+.choiceSelect:focus {
+    transition: 1s;
+}
+
 .interactionField {
     display: flex;
     flex-direction: column;
@@ -71,7 +75,8 @@ body {
 }
 
 .setInput:focus {
-    border-color: hotpink;
+    border-color: purple;
+    transition: 1s;
 }
 
 .resultButton {
