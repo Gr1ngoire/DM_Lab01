@@ -1,15 +1,7 @@
-import Utils from "./Utils.js";
-
 const AND = (A, B, universum) => {
-    let {lessArray, greaterArray} = Utils.lessGreater(A, B)
-    if (A.length !== B.length) {
-        for (let i = 0; i < greaterArray.length - lessArray.length; i++) {
-            lessArray += '0'
-        }
-    }
     let resultString = ""
-    for (let i = 0; i < greaterArray.length; i++) {
-        resultString += lessArray[i] & greaterArray[i]
+    for (let i = 0; i < A.length; i++) {
+        resultString += A[i] & B[i]
     }
     const resultArr = []
     for (let i = 0; i < resultString.length; i++) {

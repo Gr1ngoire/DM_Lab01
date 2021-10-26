@@ -1,16 +1,9 @@
-import Utils from "./Utils.js";
 const NOT = (A, B, universum) => {
-    let {lessArray, greaterArray} = Utils.lessGreater(A, B)
-    if (A.length !== B.length) {
-        for (let i = 0; i < greaterArray.length - lessArray.length; i++) {
-            lessArray += '0'
-        }
-    }
     let resultStringA = ""
     let resultStringB = ""
-    for (let i = 0; i < greaterArray.length; i++) {
-        resultStringA += Number(!Number(lessArray[i]))
-        resultStringB += Number(!Number(greaterArray[i]))
+    for (let i = 0; i < A.length; i++) {
+        resultStringA += Number(!Number(A[i]))
+        resultStringB += Number(!Number(B[i]))
     }
     const resultArrA = []
     const resultArrB = []

@@ -54,8 +54,8 @@ getResult.addEventListener('click', () => {
         case "Рівність множин":
             result.textContent = `Рівність множин: ${String(equal(A, B))}`
             break
-        case "Бітові рядки":
-            result.textContent = `Бітові рядки: A: ${String(bitString(A, U))} B: ${String(bitString(B, U))}`
+        case "Бітові строки":
+            result.textContent = `Бітові строки: A: ${String(bitString(A, U))} B: ${String(bitString(B, U))}`
             break
         case "NOT(заперечення)":
             result.textContent = `NOT(заперечення): ${String(NOT(bitString(A, U), bitString(B, U), U))}`
