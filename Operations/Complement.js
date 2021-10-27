@@ -1,6 +1,6 @@
 import Utils from "./Utils.js";
 
-const addition = (A, U) => {
+const complement = (A, U) => {
     // const resultArr = []
     // for (const element of U) {
     //     if (!Utils.includesElement(element, A)) {
@@ -10,4 +10,4 @@ const addition = (A, U) => {
     // return resultArr
     return U.filter((el) => {return !Utils.includesElement(el, A)})
 }
-export default addition
+export default complement

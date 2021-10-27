@@ -5,11 +5,11 @@ const result = document.querySelector('#resultField')
 import unite from "./Operations/Union.js"
 import intersection from './Operations/Intersection.js'
 import difference from "./Operations/Difference.js";
-import addition from "./Operations/Addition.js";
+import complement from "./Operations/Complement.js";
 import symmetricDifference from "./Operations/SymmetricDifference.js";
-import decartsMultiply from "./Operations/DecartsMultiply.js";
+import decartsMultiplication from "./Operations/DecartsMultiplication.js";
 import isSubset from "./Operations/isSubset.js";
-import equal from "./Operations/Equal.js";
+import equality from "./Operations/Equality.js";
 import bitString from "./Operations/BitString.js";
 import OR from "./Operations/OR.js";
 import AND from "./Operations/AND.js";
@@ -40,19 +40,19 @@ getResult.addEventListener('click', () => {
             result.textContent = `Різниця: ${String(difference(A, B))}`
             break
         case "Доповнення":
-            result.textContent = `Доповнення: A': ${String(addition(A, U))}; B': ${String(addition(B, U))}`
+            result.textContent = `Доповнення: A': ${String(complement(A, U))}; B': ${String(complement(B, U))}`
             break
         case "Симетрична різниця":
             result.textContent = `Симетрична різниця: ${String(symmetricDifference(A, B))}`
             break
         case "Декартів добуток":
-            result.textContent = `Декартів добуток: ${String(decartsMultiply(A, B))}`
+            result.textContent = `Декартів добуток: ${String(decartsMultiplication(A, B))}`
             break
         case "Є підмножиною":
             result.textContent = `Є підмножиною: ${String(isSubset(A, B))}`
             break
         case "Рівність множин":
-            result.textContent = `Рівність множин: ${String(equal(A, B))}`
+            result.textContent = `Рівність множин: ${String(equality(A, B))}`
             break
         case "Бітові строки":
             result.textContent = `Бітові строки: A: ${String(bitString(A, U))} B: ${String(bitString(B, U))}`

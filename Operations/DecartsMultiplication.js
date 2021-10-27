@@ -1,4 +1,4 @@
-const decartsMultiply = (A, B) => {
+const decartsMultiplication = (A, B) => {
     const resultArr = []
     for (const elementA of A) {
         for (const elementB of B) {
@@ -7,4 +7,4 @@ const decartsMultiply = (A, B) => {
     }
     return resultArr
 }
-export default decartsMultiply
+export default decartsMultiplication

@@ -1,5 +1,5 @@
 import Utils from "./Utils.js";
-const equal = (A, B) => {
+const equality = (A, B) => {
     if (A.length !== B.length) {
         return "Множини НЕ РІВНІ"
     } else {
@@ -11,4 +11,4 @@ const equal = (A, B) => {
     }
     return "Множини РІВНІ"
 }
-export default equal
+export default equality
