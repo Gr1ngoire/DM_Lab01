@@ -1,4 +1,5 @@
 const includesElement = (element, array) => {
+
     for (const el of array) {
         if (el === element) {
             return true
