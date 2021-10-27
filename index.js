@@ -33,8 +33,8 @@ getResult.addEventListener('click', () => {
         result.textContent = "Неправильна форма вводу множин"
         return
     }
-    const A = inputA.split(', ').map((element) => Number(element))
-    const B = inputB.split(', ').map((element) => Number(element))
+    const A = inputA.split(', ').length === 1 && inputA.split(', ')[0] === "" ? [] : inputA.split(', ').map((element) => Number(element))
+    const B = inputB.split(', ').length === 1 && inputB.split(', ')[0] === "" ? [] : inputB.split(', ').map((element) => Number(element))
     switch (operation) {
         case "Об’єднання":
             result.textContent = `Об’єднання: ${String(unite(A, B))}`
@@ -73,7 +73,7 @@ getResult.addEventListener('click', () => {
             result.textContent = `AND(кон’юнкція): ${String(AND(bitString(A, U), bitString(B, U), U))}`
             break
         case "XOR(нерівнозначність)":
-            result.textContent = `Бітові рядки: A: ${String(XOR(bitString(A, U), bitString(B, U), U))}`
+            result.textContent = `XOR(нерівнозначність): ${String(XOR(bitString(A, U), bitString(B, U), U))}`
             break
     }
 })

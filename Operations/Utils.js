@@ -1,11 +1,10 @@
 const includesElement = (element, array) => {
-    // for (const el of array) {
-    //     if (el === element) {
-    //         return true
-    //     }
-    // }
-    // return false
-    return !!array.find((el) => {return el === element})
+    for (const el of array) {
+        if (el === element) {
+            return true
+        }
+    }
+    return false
 }
 
 const lessGreater = (arr1, arr2) => {
