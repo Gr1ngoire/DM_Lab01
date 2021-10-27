@@ -15,7 +15,7 @@ import OR from "./Operations/OR.js";
 import AND from "./Operations/AND.js";
 import NOT from "./Operations/NOT.js";
 import XOR from "./Operations/XOR.js";
-
+import validateInput from "./InputValidation.js";
 
 const U = [1, 2, 3, 4, 5, 6, 7, 8]
 // A = [1, 7, 2, 6, 8]
@@ -27,8 +27,14 @@ selector.addEventListener('change', (event) => {
 })
 
 getResult.addEventListener('click', () => {
-    const A = document.querySelector('#A_array').value.split(', ').map((element) => Number(element))
-    const B = document.querySelector('#B_array').value.split(', ').map((element) => Number(element))
+    const inputA = document.querySelector('#A_array').value
+    const inputB = document.querySelector('#B_array').value
+    if (!validateInput(inputA) || !validateInput(inputB)) {
+        result.textContent = "Неправильна форма вводу множин"
+        return
+    }
+    const A = inputA.split(', ').map((element) => Number(element))
+    const B = inputB.split(', ').map((element) => Number(element))
     switch (operation) {
         case "Об’єднання":
             result.textContent = `Об’єднання: ${String(unite(A, B))}`

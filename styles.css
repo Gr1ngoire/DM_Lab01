@@ -76,7 +76,7 @@ body {
 
 .setInput:focus {
     border-color: purple;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .resultButton {
