@@ -2,7 +2,6 @@ const selector = document.querySelector('#selectOperation')
 const getResult = document.querySelector('#getResult')
 const result = document.querySelector('#resultField')
 
-
 import unite from "./Operations/Union.js"
 import intersection from './Operations/Intersection.js'
 import difference from "./Operations/Difference.js";
