@@ -16,6 +16,7 @@ import AND from "./Operations/AND.js";
 import NOT from "./Operations/NOT.js";
 import XOR from "./Operations/XOR.js";
 import validateInput from "./InputValidation.js";
+import bitDifference from "./Operations/bitDifference.js";
 
 const U = [1, 2, 3, 4, 5, 6, 7, 8]
 // A = [1, 7, 2, 6, 8]
@@ -43,7 +44,10 @@ getResult.addEventListener('click', () => {
             result.textContent = `Перетин: ${String(intersection(A, B))}`
             break
         case "Різниця":
-            result.textContent = `Різниця: ${String(difference(A, B))}`
+            result.textContent = `Різниця: A на B: ${String(difference(A, B))}; B на А: ${String(difference(B, A))}`
+            break
+        case "Бітова різниця":
+            result.textContent = `Бітова різниця: A на B: ${String(bitDifference(A, B, U))}; B на А: ${String(bitDifference(B, A, U))}`
             break
         case "Доповнення":
             result.textContent = `Доповнення: A': ${String(complement(A, U))}; B': ${String(complement(B, U))}`
