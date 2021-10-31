@@ -33,6 +33,6 @@ const bitDifference = (A, B, U) => {
             resultString += "0"
         }
     }
-    return `Бітовий вигляд:${resultString}; Нормальний виглд: ${result}`
+    return `Бітовий вигляд:${resultString}; Нормальний вигляд: ${result}`
 }
 export default bitDifference
